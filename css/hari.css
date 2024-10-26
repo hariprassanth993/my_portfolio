@@ -641,10 +641,11 @@ padding-bottom: 1.3%;
 }
 
 .pro-box {
+    
     background-color: #1c1c1c;
-    border-radius: 10px;
+    border-radius: 1px;
     overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0,0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -701,7 +702,7 @@ padding-bottom: 1.3%;
 .pro-box {
     position: relative;
     background: #2a2a2a;
-    padding: 20px;
+    padding: 1px;
     border-radius: 8px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     transition: 0.3s ease;
@@ -712,13 +713,13 @@ padding-bottom: 1.3%;
 }
 
 .pro-image img {
-    border-radius: 8px;
+    border-radius: 9px;
     width: 100%;
 }
 
 .pro-content h3 {
     margin-top: 15px;
-    font-size: 1.5rem;
+    font-size: .5rem;
     color: #ffd700;
 }
 .btn {
@@ -909,3 +910,43 @@ h3 {
       filter: drop-shadow(0 0 10px#00abf0);
   
   } */
+/* Center the last project box container */
+.project-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Add space between project boxes */
+}
+
+.pro-box {
+    width: 300px;
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pro-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.pro-content {
+    margin-top: 15px;
+}
+
+/* Button container styling for each project link */
+.pro-content div a {
+    margin: 0 10px;
+    color: gold;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.pro-content div a:hover {
+    color: #f39c12;
+}
